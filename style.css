@@ -1,0 +1,199 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #0057ff, #00b4ff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.kv-star{
+    width: 100px;
+    height: 100px;
+     position: absolute;
+     display: flex;
+     justify-content: left;
+     margin-top: -20px;
+
+}
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+    opacity: 0.95;
+}
+.Text{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+    
+}
+.box{
+    margin-top: 20px;
+}
+.menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.nav {
+    background: #003fbf;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #0057ff;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #0057ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #003fbf;
+}
+
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Анімація */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Мобільні стилі */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+    .kv-star{
+    width: 80px;
+    height: 80px;
+     position: absolute;
+     display: flex;
+     justify-content: left;
+     margin-top: -30px;
+     margin-left: -30px;
+
+}
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+    }
+        .kv-star{
+    width: 50px;
+    height: 50px;
+     position: absolute;
+     display: flex;
+     justify-content: left;
+     margin-top: -15px;
+     margin-left: -10px;
+
+}
+}

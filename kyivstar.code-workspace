@@ -7,5 +7,7 @@
 			"path": "../../../Desktop/lesson/KYIVSTAR/img"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "kyivstar"
+	}
 }

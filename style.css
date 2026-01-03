@@ -1,4 +1,3 @@
-/* style.css */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,48 +17,58 @@ header {
     text-align: center;
     position: relative;
 }
-.kv-star{
+
+.kv-star {
     width: 100px;
     height: 100px;
-     position: absolute;
-     display: flex;
-     justify-content: left;
-     margin-top: -20px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    margin-top: -20px;
 
 }
+
 header h1 {
     font-size: 28px;
     margin-bottom: 5px;
 }
-.phone{
+
+.phone {
     text-decoration: none;
     transition: all 0.5s ease;
     cursor: pointer;
     color: #0057ff;
 }
-.city{
+
+.city {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 header p {
     font-size: 16px;
     opacity: 0.95;
 }
-ul li::marker{
+
+ul li::marker {
     color: #003fbf;
 }
-.Text{
+
+.Text {
     border-bottom: 1px solid rgb(255, 255, 255);
     padding-bottom: 5px;
-    
+
 }
-.con-text{
+
+.con-text {
     width: 550px;
     height: 400px;
 }
-.box{
+
+.box {
     margin-top: 20px;
 }
+
 .menu-toggle {
     position: absolute;
     top: 20px;
@@ -140,7 +149,25 @@ footer {
     font-size: 14px;
 }
 
-/* Анімація */
+.call-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+    color: #00b4ff;
+}
+.phone-number{
+margin-left: 80px;
+}
+.card-content{
+        background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+    
+
 .fade {
     opacity: 0;
     transform: translateY(20px);
@@ -158,6 +185,12 @@ footer {
         font-size: 24px;
     }
 
+    .text-phone {
+        width: 400px;
+        height: 300px;
+        margin-left: -25px;
+    }
+
     header p {
         font-size: 14px;
     }
@@ -169,17 +202,19 @@ footer {
     .nav {
         display: none;
         flex-direction: column;
+        background: #096de7;
     }
-    .kv-star{
-    width: 80px;
-    height: 80px;
-     position: absolute;
-     display: flex;
-     justify-content: left;
-     margin-top: -30px;
-     margin-left: -30px;
 
-}
+    .kv-star {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        margin-top: -30px;
+        margin-left: -30px;
+
+    }
 
     .nav.show {
         display: flex;
@@ -202,14 +237,43 @@ footer {
     .btn {
         padding: 10px 16px;
     }
-        .kv-star{
-    width: 50px;
-    height: 50px;
-     position: absolute;
-     display: flex;
-     justify-content: left;
-     margin-top: -15px;
-     margin-left: -10px;
 
-}
+    .kv-star {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        margin-top: -15px;
+        margin-left: -10px;
+
+    }
+
+    .con-text {
+        width: 210px;
+        height: 230px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .con-text {
+        height: 600px;
+    }
+
+    .text-phone {
+        width: 300px;
+        height: 300px;
+        margin-left: -25px;
+    }
+
+    .call-btn {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        text-decoration: none;
+        color: #00b4ff;
+    }
+
 }
